@@ -4,12 +4,14 @@ import com.example.backend.model.FilterItem;
 import com.example.backend.service.MRTService;
 import com.example.backend.service.SchoolService;
 import com.example.backend.service.TownshipService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class FilterController {
     private final TownshipService townshipService;
     private final SchoolService schoolService;

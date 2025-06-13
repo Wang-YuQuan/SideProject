@@ -5,17 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var name = "56465";
-
-function changeName() {
-    name = "123";
-    console.log("123");
-}
 
 root.render(
     <div>
-        <button onClick={changeName}>change</button>
-        <App buttonName={name} />
+        <App />
     </div>
 );
 
