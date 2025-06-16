@@ -17,7 +17,7 @@ public class SchoolDao {
     }
 
     public List<FilterItem> getSchool() {
-        String sql = "SELECT id, name FROM SCHOOL_NAME";
+        String sql = "SELECT id, name FROM SCHOOL_NAME ORDER BY id ASC";
         Map<String, Object> params = new HashMap<>();
         SchoolRowMapper rowMapper = new SchoolRowMapper();
         return namedParameterJdbcTemplate.query(sql, params, rowMapper);

@@ -73,7 +73,7 @@ function Filter() {
                     label: item.name,
                     value: item.id
                 }));
-                setTownshipOptionsOptions(transformedOptions);
+                setTownshipOptionsOptions([{ label: '不限', value: '0' }, ...transformedOptions]);
             })
             .catch((err) => {
                 console.error('錯誤:', err);
@@ -85,7 +85,7 @@ function Filter() {
                     label: item.name,
                     value: item.id
                 }));
-                setSchoolOptionsOptions(transformedOptions);
+                setSchoolOptionsOptions([{ label: '不限', value: '0' }, ...transformedOptions]);
             })
             .catch((err) => {
                 console.error('錯誤:', err);
@@ -97,7 +97,7 @@ function Filter() {
                     label: item.name,
                     value: item.id
                 }));
-                setMRTOptionsOptions(transformedOptions);
+                setMRTOptionsOptions([{ label: '不限', value: '0' }, ...transformedOptions]);
             })
             .catch((err) => {
                 console.error('錯誤:', err);

@@ -17,7 +17,7 @@ public class MRTDao {
     }
 
     public List<FilterItem> getMRT() {
-        String sql = "SELECT id, name FROM MRT_NAME";
+        String sql = "SELECT id, name FROM MRT_NAME ORDER BY id ASC";
         Map<String, Object> params = new HashMap<>();
         MRTRowMapper rowMapper = new MRTRowMapper();
         return namedParameterJdbcTemplate.query(sql, params, rowMapper);

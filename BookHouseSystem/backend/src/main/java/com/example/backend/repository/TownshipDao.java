@@ -17,7 +17,7 @@ public class TownshipDao {
     }
 
     public List<FilterItem> getTownship() {
-        String sql = "SELECT id, name FROM TOWNSHIP_NAME";
+        String sql = "SELECT id, name FROM TOWNSHIP_NAME ORDER BY id ASC";
         Map<String, Object> params = new HashMap<>();
         TownshipRowMapper rowMapper = new TownshipRowMapper();
         return namedParameterJdbcTemplate.query(sql, params, rowMapper);

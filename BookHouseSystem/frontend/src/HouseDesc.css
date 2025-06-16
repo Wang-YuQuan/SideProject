@@ -1,0 +1,18 @@
+.WhiteArea {
+    background-color: #ffffff;
+}
+
+.imgStyle {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.DescRightArea {
+    margin-left: 15px;
+}
+
+.HousePriceArea {
+    color: red;
+    font-size: 25px;
+    text-align: right;
+}
